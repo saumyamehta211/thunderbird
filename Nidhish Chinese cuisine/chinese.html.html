@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chinese.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet"media="screen and (max-width:768px)" href="chinese2.css"/>
+
+
+    <title>CHINESE CUISINES</title>
+    
+   
+</head>
+<body>
+  <div id="wrapper">
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">Thunder's Fury</a></h1>
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Menu</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <a href=""><img src="images/one.jpg" name="slideshow" id="slideshow"width="60%" height="400"></a>
+  </div>
+    <br>
+
+    <main class="para">
+      <h2>Chinese Food </h2>
+      <img src="Images/logo.jpg" alt="logo" class="chinese-food-img"/>
+      
+      <p class="aboutpara">
+        Chinese cuisine is an important part of Chinese culture and includes cuisines originating from  the 
+        diverse regions of China as well as from Overseas Chinese who have settled in other parts of the 
+        world. Because of the Chinese diaspora and historical power of the country, Chinese cuisine has 
+        influenced many her cuisines in Asia, with modifications made to cater to local palates.
+        Chinese food staples such as rice, soy sauce, noodles, tea, chili oil, and tofu, and 
+        utensils such as chopsticks and the wok, can now be found worldwide.
+        <br>
+        The preferences for seasoning and cooking techniques of Chinese provinces depend on 
+        differences in historical background and ethnic groups. Geographic features including 
+        mountains, rivers, forests, and deserts also have a strong effect on the local available 
+        ingredients, considering that the climate of China varies from tropical in the south to 
+        subarctic in the northeast
+        </p>
+        
+        <div class="container">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <h3>Dumpling (饺子)</h3>
+                      <img src="Images/Dumpling.jpg" height="250" width="250" alt="First image">
+                      <p>Dumpling (饺子) has been an indispensable Chinese dish of the reunion dinner on 
+                        Chinese New Year’s Eve especially in the northern regions. It was invented by Zhang 
+                        Zhongjing – the sage of Chinese medicine over 1,800 years ago to cure the frostbitten ears.</p>
+                  </div>
+                  
+                  <div class="col-sm-3">
+                      <h3>Kung (宫保鸡丁）</h3>
+                      <img src="Images/kung pao chicken.jpg" height="250" width="250" alt="Second image">
+                      <p>Kung Pao Chicken（宫保鸡丁）, definitely one of the top 10 Chinese dishes, is a popular dish not only 
+                          among Chinese people. Its special flavor of sweet and sour with a little bit spicy is also 
+                          well-liked abroad and this course even becomes the byword for Chinese cuisine for most foreigners.</p>
+                  </div>
+                  
+                  <div class="col-sm-3">
+                      <h3>Chowmein（炒面）</h3>       
+                      <img src="Images/chowmein.jpg" height="250" width="250" alt="Third image"> 
+                      <p>Chow Mein（炒面）is the Cantonese pronunciation of stir-fried noodles. It is one 
+                      of the best Chinese dishes, usually made of noodles, onion, sliced meat, green pepper and green onion.</p>
+                  </div>
+                      
+                  <div class="col-sm-3">
+                      <h3>Hot Pot（火锅</h3>       
+                      <img src="Images/hotpot.jpg"  height="250" width="250" alt="Fourth image"> 
+                      <p>Chinese people consider the Hot Pot（火锅）their first choice to hold a dinner party since it can
+                      satisfy all the people’s taste. As its name indicates, the Hot Pot is cooked in a big wok which 
+                      is placed on a stove to get continuously heated. </p>
+                  </div>
+          </div>
+      </main>
+      
+  </body>
+<footer class="main-footer">
+  <p>Thunder Fury &copy; 2021, All Rights Reseved</p>
+</footer>
+<script>
+
+let ImagesArray = ["Images/one.jpg","Images/two.jpg","Images/three.jpg","Images/four.jpg","Images/five.jpg"];
+
+let ImageNumber = 0;
+let difference = ImagesArray.length -1;
+let delay = 3000; 
+setInterval('ChangeImages(1)', delay);
+
+function ChangeImages(direction)
+{
+  ImageNumber = ImageNumber + direction;
+  if(ImageNumber > difference)
+  {
+    ImageNumber = 0;
+  }
+  if(ImageNumber < 0)
+  {
+    ImageNumber = difference;
+  }
+  document.getElementById('slideshow').src = ImagesArray[ImageNumber];
+  }
+</script>
+</div>
+</html>

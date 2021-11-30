@@ -1,0 +1,220 @@
+/* Browser CSS Reset */
+body,
+p,
+ul,
+h1,
+h2,
+h3,
+footer {
+  margin: 0;
+  padding: 0;
+  
+}
+#slideshow {
+  margin-left: 300px;
+  margin-top: 10px;
+}
+#wrapper {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  min-width: 900px;
+  max-width: 1524px;
+  padding: 0;
+  box-shadow: 10px 18px 18px 18px #888888;
+  background:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(Images/restaurant1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+h1 a {
+  font-family: "Bonheur Royale", cursive;
+  font-size: 3rem;
+  margin-bottom: 0px;
+}
+
+.heading {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+#navbar {
+  background: black;
+  overflow: auto;
+  color: white;
+}
+#navbar a {
+  color: white;
+  display: block;
+  margin: auto;
+  text-decoration: none;
+}
+
+#navbar .logo {
+  float: left;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+  margin-top: 25px;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+/* Navbar */
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+.clr {
+  clear: both;
+}
+.l-heading {
+  font-size: 40px;
+  line-height: 1.2;
+}
+/* Padding */
+.py-1 {
+  padding: 10px 0px;
+}
+.py-2 {
+  padding: 20px 0px;
+}
+.py-3 {
+  padding: 30px 0px;
+}
+
+.aboutpara {
+  padding-left: 500px;
+  padding-right: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  margin-bottom: 100px;
+  font-weight: 600;
+  font-style: italic;
+  
+}
+
+.para h2 {
+  font-size: 50px;
+  padding-left: 500px;
+  padding-right: 100px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+p {
+  font-weight: 600;
+  font-style: italic;
+  font-size: larger;
+}
+
+.chinese-food-img {
+  float: left;
+  width: 400px;
+  height: 300px;
+  margin-left: 30px;
+}
+
+.menu {
+  overflow: hidden;
+  background-color: rgb(204, 28, 28);
+  text-align: center;
+  margin-top: 75px;
+}
+
+.menu a {
+  float: left;
+  color: #080707;
+  padding: 10px 20px;
+  font-size: 17px;
+}
+.h3 {
+  width: 250px;
+  height: 250px;
+}
+.main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 100px;
+    margin: 0;
+  }
+  .nav-bar a{
+    margin-right: 10px;
+  }
+  .main-class {
+    display: block;
+  }
+  #slideshow {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 736px;
+  }
+  .chinese-food-img {
+   
+    margin-left: 200px;
+  }
+  .para h2 {
+    padding-left: 250px;
+  }
+  .aboutpara {
+    padding-left: 50px;
+    padding-right: 180px;
+    margin-top: 350px;
+  }
+
+}
