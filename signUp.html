@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <form id="form" action="login.html" method="get">
+        <form id="form" method="get">
             <h1>Signup or <a href="login.html"> Login</a></h1>
             <label class="firstName">First Name</label>
             <input type="text" placeholder="eg.,Nidhish" id="firstName" required>
@@ -23,7 +23,7 @@
             <input type="password" id="password" placeholder="eg.,Qwerty@1" required>
             <label for="Mobile">Mobile</label>
             <input type="tel" placeholder="eg.,1234567890" id="mobile" required>
-            <button type="submit" class="submit-btn" onclick="signUpSubmit()">Submit</button>
+            <button type="submit" class="submit-btn" onclick="event.preventDefault();signUpSubmit()">Submit</button>
         </form>
     </div>
 </body>
@@ -66,18 +66,9 @@
         console.log("mobile format: " + phoneFormat)
         alert('Enter a valid number');
     }
-    if (
-         firstName.value > 2 &&
-         lastName.value > 2 &&
-         emailFormat.test(email) &&
-         password.value.length <= 6 &&
-         mobile.value.length == 10
-     ) {
-         alert("inside last if")
-         alert('--------------Your account has been created');
-     }
     else {
-        alert('Your account has been created');
+    alert('Your account has been created');
+    window.location.href="login.html";
     }
     }
 </script>

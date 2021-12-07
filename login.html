@@ -8,7 +8,7 @@
     <title>Login Page</title>
 </head>
 <body>
-    <form class="login" id="form" action="/index.html"  method="get">
+    <form class="login" id="form" onsubmit="event.preventDefault()"  method="get">
         <h1> Login or <a href="signUp.html">Signup</a></h1>
         <label for="email">Email</label>
         <input id="email" placeholder="eg.,test@xyz.com" type="text" required>
@@ -24,8 +24,9 @@
     function login()
     {
     const email = document.getElementById('email')
-    const password = document.getElementById('Password')
-    var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const password = document.getElementById('Password').value;
+    
+    var emailFormat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
 
     if (email.value == '' || email.value == null) {
         alert("email is required");
@@ -34,17 +35,16 @@
         console.log("email: " + email)
         console.log("email format: " + emailFormat)
         alert('enter valid email id.');
-    
     }
     else if(password == '') {
         alert('Please enter the password');
     }
-    else if(password.value.length >= 20 && password.value.length <= 6) {
+    else if(password.length >= 20 || password.length <= 6) {
         alert('Incorrect Password');
     }
-    
     else {
         alert('Thank you for login & you are redirecting to webpage');
+        window.location.href="index.html";
     }
 }
 </script>
