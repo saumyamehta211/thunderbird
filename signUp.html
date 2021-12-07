@@ -13,13 +13,13 @@
     <div class="container">
         <form id="form" action="login.html" method="get">
             <h1>Signup or <a href="login.html"> Login</a></h1>
-            <label class="firstName">firstName</label>
+            <label class="firstName">First Name</label>
             <input type="text" placeholder="eg.,Nidhish" id="firstName" required>
-            <label for="lastName">lastName</label>
+            <label for="lastName">Last Name</label>
             <input type="text" placeholder="eg.,Kansra" id="lastName" required >
-            <label for="email" >email</label>
+            <label for="email" >E-mail</label>
             <input type="email" placeholder="eg.,test@xyz.com" id="email" required>
-            <label for="password">password</label>
+            <label for="password">Password</label>
             <input type="password" id="password" placeholder="eg.,Qwerty@1" required>
             <label for="Mobile">Mobile</label>
             <input type="tel" placeholder="eg.,1234567890" id="mobile" required>
@@ -38,8 +38,9 @@
     var email = document.getElementById('email')
     var password = document.getElementById('password')
     var mobile = document.getElementById('mobile')
-    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-   
+    var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var phoneFormat = /^\d{10}$/;
+
     if (firstName.value == '' || firstName.value == null) {
         alert("firstName is required");
     }
@@ -49,7 +50,9 @@
     else if (email.value == '' || email.value == null) {
         alert("email is required");
     }
-    else if (filter.test(email)){
+    else if (!(email.value.match(emailFormat))){
+        console.log("email: " + email)
+        console.log("email format: " + emailFormat)
         alert('enter valid email id.');
     }
     else if (password == '' | password.value.length <= 6) {
@@ -58,9 +61,21 @@
     else if(password.value.length >= 20) {
         alert('Password must be less than 20 character');
     }
-    else if(mobile.value.length != 10) {
+    else if (!(mobile.value.match(phoneFormat))) {
+        console.log("mobile: " + mobile)
+        console.log("mobile format: " + phoneFormat)
         alert('Enter a valid number');
     }
+    if (
+         firstName.value > 2 &&
+         lastName.value > 2 &&
+         emailFormat.test(email) &&
+         password.value.length <= 6 &&
+         mobile.value.length == 10
+     ) {
+         alert("inside last if")
+         alert('--------------Your account has been created');
+     }
     else {
         alert('Your account has been created');
     }
