@@ -2,7 +2,6 @@ html {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0px;
   border-color: lightskyblue;
-  overflow: hidden;
 }
 
 body {
@@ -110,7 +109,7 @@ figure {
   margin: 0px;
 }
 
-footer {
+#footer {
   text-align: center;
   background: rgb(68, 68, 68);
   color: rgb(255, 255, 255);
@@ -161,7 +160,8 @@ footer {
   text-align: center;
 }
 
-#navbar ul li a:hover, #navbar ul li a.current {
+#navbar ul li a:hover,
+#navbar ul li a.current {
   background: rgb(68, 68, 68);
   color: rgb(247, 192, 138);
 }
@@ -230,5 +230,5 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
+  }
 }

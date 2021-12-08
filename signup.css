@@ -46,10 +46,14 @@ label {
   color: #fff;
   padding: 20px;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   margin-top: 930px;
+}
+.fab {
+  color: black;
 }
 @media screen and (max-width: 768px) {
   .main-footer {

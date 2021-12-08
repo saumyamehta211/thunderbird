@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/Images/favicon.jpeg" />
     <script
       src="https://kit.fontawesome.com/964f8851c3.js"
       crossorigin="anonymous"
@@ -66,25 +67,33 @@
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" name="name" id="name" />
-            <p id="demo"></p>
+            <span>*</span><br />
           </div>
           <div class="form-group">
             <label for="age">Age</label>
             <input type="number" name="age" id="age" />
+            <span>*</span><br />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" email="email" id="email" />
+            <span>*</span><br />
           </div>
           <div class="form-group">
             <label for="education">Educational Qualification</label>
-            <input type="text" name="education" id="education" />
+            <select id="taskdropdown"></select>
           </div>
           <div class="form-group">
             <label for="message">Why Should We Hire You?</label>
             <textarea name="message" id="message"></textarea>
+            <span>*</span><br />
           </div>
-          <button type="submit" class="btn" onclick="checkValue()">
+          <button
+            type="submit"
+            class="btn"
+            id="hiringvalidate"
+            onclick="checkValue()"
+          >
             Submit
           </button>
         </form>
@@ -140,30 +149,16 @@
     </nav>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/header.js"></script>
+    <script src="hiring.js"></script>
     <script>
-      function checkValue() {
-        let namevar = document.getElementById("name").value;
-        let agevar = document.getElementById("age").value;
-        let emailvar = document.getElementById("email").value;
-        let educationvar = document.getElementById("education").value;
-        let messagevar = document.getElementById("message").value;
-
-        let text;
-        if (namevar == "" || namevar == null) {
-          alert("Name Field can't be blank");
+      let education = ["High School", "College", "Masters", "PHD", "N/A"];
+      dropdown();
+      function dropdown() {
+        let opt = "";
+        for (let i = 0; i < education.length; i++) {
+          opt += "<option>" + education[i] + "</option>";
         }
-        if (agevar == "" || agevar == null) {
-          alert("Age Field can't be blank");
-        }
-        if (emailvar == "" || emailvar == null) {
-          alert("Email Field can't be blank");
-        }
-        if (educationvar == "" || educationvar == null) {
-          alert("Education Field can't be blank");
-        }
-        if (messagevar == "" || messagevar == null) {
-          alert("Why Should we hire you field can't be blank");
-        }
+        document.getElementById("taskdropdown").innerHTML = opt;
       }
     </script>
   </body>

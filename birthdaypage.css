@@ -1,56 +1,56 @@
 body {
-    background-image: url('Images/picture.jpeg');
-    margin:0px;
+  background-image: url("Images/picture.jpeg");
+  margin: 0px;
 }
 #wrapper2 {
-    width: 60%;
-    background: rgba(205, 209, 209, 0.6);
-    color: #000000;
-    margin: 0 auto;
-    min-width: 750px;
-    max-width: 1024px;
+  width: 60%;
+  background: rgba(205, 209, 209, 0.6);
+  color: #000000;
+  margin: 0 auto;
+  min-width: 750px;
+  max-width: 1024px;
 }
 #navbar {
-    background: black;
-    overflow: auto;
-    color: white;
-  }
-  #navbar a {
-    color: white;
-    display: block;
-    margin: auto;
-    text-decoration: none;
-  }
-  
-  #navbar .logo {
-    float: left;
-    padding-top: 10px;
-    padding-left: 50px;
-  }
-  
-  #navbar ul {
-    list-style: none;
-    float: right;
-    margin-top: 25px
-  }
-  
-  #navbar li {
-    float: left;
-  }
-  
-  #navbar ul li a {
-    display: block;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  #navbar ul li a:hover,
-  #navbar ul li a.current {
-    background: #444;
-    color: #f7c08a;
-  }
+  background: black;
+  overflow: auto;
+  color: white;
+}
+#navbar a {
+  color: white;
+  display: block;
+  margin: auto;
+  text-decoration: none;
+}
 
-  /* Navbar */
+#navbar .logo {
+  float: left;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+  margin-top: 25px;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+/* Navbar */
 .btn {
   display: inline-block;
   font-size: 18px;
@@ -98,93 +98,83 @@ body {
   padding: 30px 0px;
 }
 h1 {
-    color: brown;
-    
+  color: brown;
 }
 h2 {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 35px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 35px;
 }
 p {
-    padding-left: 220px;
-    font-size: 20px;
+  padding-left: 22px;
+  font-size: 20px;
 }
 legend {
-    text-align: center;
-    font-size: 21px;
+  text-align: center;
+  font-size: 21px;
 }
 .first_name {
-    padding-left: 200px;
-    font-size: 20px;
-    
+  padding-left: 200px;
+  font-size: 20px;
 }
 .last_name {
-    padding-left: 203px;
-    font-size: 20px;
-    
+  padding-left: 203px;
+  font-size: 20px;
 }
 .Email {
-    padding-left: 229px;
-    font-size: 20px;
-    
+  padding-left: 229px;
+  font-size: 20px;
 }
 .number {
-    padding-left: 164px;
-    font-size: 20px;
-    
+  padding-left: 164px;
+  font-size: 20px;
 }
 .birthday_date {
-    padding-left: 223px;
-    font-size: 20px;
-    
+  padding-left: 223px;
+  font-size: 20px;
 }
 .arrival_time {
-    padding-left: 223px;
-    font-size: 20px;
-    
+  padding-left: 223px;
+  font-size: 20px;
 }
 .Departure_time {
-    padding-left: 203px;
-    font-size: 20px;
-        
+  padding-left: 203px;
+  font-size: 20px;
 }
 .total_guest {
-    padding-left: 113px;
-    font-size: 20px;
-    
+  padding-left: 113px;
+  font-size: 20px;
 }
 .party_type {
-    margin-left: 43%;
-    margin-top: 10px;
-    font-size: 20px;
-    
+  margin-left: 43%;
+  margin-top: 10px;
+  font-size: 20px;
 }
-input[type=radio] {
-    height: 15px;
-    width: 15px;
+input[type="radio"] {
+  height: 15px;
+  width: 15px;
 }
 
 p1 {
-    font-size: 20px;
+  font-size: 20px;
 }
 .submitbutton {
-    background-color: #e44a4a;
-    border: none;
-    color: white;
-    padding: 20px 62px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    margin-left: 40%;
+  background-color: #e44a4a;
+  border: none;
+  color: white;
+  padding: 20px 62px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 40%;
 }
-.main-footer {
-    text-align: center;
-    background: #444;
-    color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
