@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+    background-image: url(/Images/pizza.jpg);
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 20px 0px;
+}
+
+/* Utility class */
+
+.container {
+    background-color: white;
+    margin: auto;
+    max-width: 600px;
+    padding: 10px 20px;
+    text-align: left;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* padding-top: 5px; */
+    /* padding-bottom: 5px; */
+    border: 10px solid #084B27;
+    border-radius: 10px;
+}
+
+.container .heading {
+    font-size: 46px;
+    text-align: center;
+    color: #CA3D2A;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: 450px;
+}
+
+.text-Primary {
+    color: #f7c08a;
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.container span{
+    color: #CA3D2A;
+    font-weight: bold;
+    font-size: small;
+}
+
+/* Navbar */
+
+.btn {
+    display: inline-block;
+    align-self: center;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background: #333;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #084B27;
+    color: white;
+}
+
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-primary {
+    background: #f7c08a
+    ;
+    color: #333;
+}
+
+.clr {
+    clear: both;
+}
+
+.l-heading {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+/* Padding */
+
+.py-1 {
+    padding: 10px 0px;
+}
+
+.py-2 {
+    padding: 20px 0px;
+}
+
+.py-3 {
+    padding: 30px 0px;
+}
+
+#navbar {
+    background: black;
+    overflow: auto;
+    color: white;
+}
+
+#navbar a {
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+#navbar .logo {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover, #navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+}
+
+#main-footer {
+    text-align: center;
+    background: #444;
+    color: #fff;
+    padding: 20px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+#navbar .logo{
+    float:none;
+    text-align: center;
+}
+
+#navbar ul , #navbar ul li {
+    float: none;
+}
+
+#navbar ul li a {
+    padding: 5px;
+    border-bottom: #444 dotted 1px;
+}
+
+#showcase{
+    height: 100%;
+    
+}
+
+
+.form-fields input[type="text"],
+.form-fields input[type="email"] {
+    max-width: 100%;
+}
+
+#showcase .showcase-content{
+    padding-top:70px ;
+    padding-bottom: 30px;
+}
+
+#home-info .info-img {
+    height: 550px;
+    display: none;
+}
+#home-info .info-content{
+    float: none;
+    width: 100%;
+}
+.box{
+    float: none;
+    width: 100%;
+}
+
+#about-info .info-right,#about-info .info-left {
+    float: none;
+    width: 100%;
+
+}
+#about-info .info-right{
+    margin-top: 30px;
+}
+.l-heading{
+    text-align: center;
+}
+
+#contact-info .box{
+    border-bottom:#444 1px dotted;
+
+}
+
+.form-group input, form select, .form-group textarea {
+    width: -webkit-fill-available;
+}
+
+}

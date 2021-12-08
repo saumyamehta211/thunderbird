@@ -1,0 +1,181 @@
+/* Header styling start */
+header {
+    background-color: black;
+    text-align: center;
+}
+
+header img {
+    width: 5%;
+}
+
+header #header_text {
+    font-size:x-large;
+    color: white;
+}
+/* Header styling end */
+
+/* Body styling section start */
+body {
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+/* Body styling section end */
+
+
+/* Main section styling start*/
+#main_heading {
+    background-image: url(../images/image-header.jpg);
+    background-size: cover;
+    padding: 20%;
+}
+
+#main_heading h1 {
+    color:white;
+    text-align: center;
+    margin-top: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#main_heading p {
+    color:white;
+}
+
+#heading1 {
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+}
+
+#heading2 {
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+}
+
+#heading1 h1 {
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+#heading2 h1 {
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+#heading1:hover,#heading2:hover{
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* Common event styles */
+#event1, #event2, #event3, #event4, #event5 {
+    padding: 10% 20% 20%;
+    height: 50vh;
+}
+
+#event1_image, #event3_image, #event2_image {
+    width:20vw;
+}
+
+/* Event 1 styles */
+#event1_image{
+    float:left;
+    padding:20px;
+}
+
+/* Event 2 styles */
+#event2 {
+    background-image: url(../images/texture1.jpg);
+    background-size: cover;
+}
+
+/* Event 3 styles */
+#event3 {
+    background-color:black ;
+    color: white;
+}
+
+#event3_image{
+    float:left;
+    padding:20px;
+}
+
+#wine_tasting_text {
+    width: 40%;
+    float: left;
+    color: white;
+}
+
+#event2_image {
+    float:right;
+    padding:20px;
+}
+
+/* Event 4 styles */
+#event4 {
+    background-image: url(../images/weddings.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#event4_wrapper {
+    padding:10%;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#event4 h1 {
+    text-align: center;
+}
+
+/* Event 5 styles */
+#event5 {
+    background-image: url(../images/birthday.jpg);
+    background-size: cover;
+    color: white;
+}
+
+#event5_wrapper {
+    padding:10%;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#event5 h1 {
+    text-align: center;
+}
+
+
+/* Main section styling end*/
+
+/* Media query starts */
+@media screen and (max-width:600px) {
+    h1 {
+        font-size:large;
+    }
+    section p {
+        font-size:small;
+    }
+    #event1, #event2, #event3, #event4, #event5 {
+        height: 100vh;
+    }
+}
+/* Media query ends */

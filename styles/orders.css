@@ -1,0 +1,71 @@
+/* Body styling section start */
+body {
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    background-color: white;
+}
+/* Body styling section end */
+
+/* Main product section styles */
+main {
+    margin-bottom: 15%;
+}
+
+main h1 {
+    color: black;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px 100px;
+}
+
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item5 {
+    grid-column-start: 2;
+    grid-column-end: last;
+}
+
+#products-container {
+    display: inline-block;
+    width:70%; 
+}
+
+#order-details {
+    display: inline-block;
+    font-size: medium;
+    width:20%;
+    float: right;
+    border: 1px solid #a1a1a1;
+    box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+    padding: 2%;
+    margin-right: 1%;
+}
+#subtotal-price,#taxes-price,#total-price {
+    float: right;
+    font-weight: bold;
+}
+
+.product {
+    width:90%;
+    margin-left:9%;
+    margin-bottom:2%;
+    padding: 2%;
+    border: 1px solid #a1a1a1;
+    box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+}
+
+.product .product-heading {
+    font-size: large;
+}
+
+.product .product-image-container img{
+    max-width: 200px;
+}

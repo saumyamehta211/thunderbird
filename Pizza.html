@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Thunder Bird Fury" />
+    <meta name="keywords" content="Thunder Bird Fury" />
+    <script
+      src="https://kit.fontawesome.com/964f8851c3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Pizza.css" />
+    <link rel="shortcut icon" href="/Images/favicon.jpeg" />
+    <title>Thunder Fury</title>
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <h1 class="logo"><a href="index.html">ThunderFury</a></h1>
+          <ul>
+            <li class="dropdown">
+              <a class="current" href="menu.html">Menu</a>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="mughlai_cuisine_abhishek.html">Mughlai</a>
+                <a href="Mexican.html">Mexican</a>
+                <a href="chinese.html">Chinese</a>
+              </div>
+            </li>
+            <li class="dropdown1">
+              <a href="events.html">Event & Booking</a>
+              <div id="myDropdown1" class="dropdown-content">
+                <a href="wedding_booking.html">Wedding</a>
+                <a href="birthdaypage.html">Birthday</a>
+              </div>
+            </li>
+            <li><a href="Pizza.html">Pizza Delivery</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li>
+              <a href="order_page.html"
+                ><i class="fas fa-shopping-cart fa-1.5x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="pizzafil" class="py-3">
+      <div class="container">
+        <h1 class="heading">Pizza</h1>
+
+        <form name="myForm">
+          <div class="form-group">
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" size="65" />
+            <span></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone No. :</label>
+            <input
+              type="text"
+              email="phone"
+              id="phone"
+              maxlength="10"
+              size="60"
+            />
+            <span></span>
+          </div>
+          <label for="size">Size : &nbsp;&nbsp;&nbsp; </label>&nbsp;
+          <select name="size" id="size">
+            <option value="" disabled selected hidden>
+              Select The Size...
+            </option>
+            <option value="X-Large">X-Large</option>
+            <option value="Large">Large</option>
+            <option value="Medium">Medium</option>
+          </select>
+          <span></span><br />
+
+          <label for="crust">Crust :&nbsp;&nbsp;</label>&nbsp;
+          <select name="crust" id="crust">
+            <option value="" disabled selected hidden>
+              Select The Crust...
+            </option>
+            <option value="Regualr">Regular</option>
+            <option value="Thin">Thin</option>
+            <option value="Thick">Thick</option>
+          </select>
+          <span></span><br />
+          <label for="dough">Dough :</label>&nbsp;
+          <select name="dough" id="dough">
+            <option value="" disabled selected hidden>
+              Select The Dough...
+            </option>
+            <option value="Regualr">Regualr</option>
+            <option value="Whole Wheat">Whole Wheat</option>
+            <option value="Gluten Free">Gluten Free</option>
+          </select>
+          <span></span><br />
+          <label for="sauce">Sauce :&nbsp;&nbsp;</label>&nbsp;
+          <select name="sauce" id="sauce">
+            <option value="">Select The Sauce...</option>
+            <option value="Regualr">Regualr</option>
+            <option value="Butter Chicken Gravy">Butter Chicken Gravy</option>
+            <option value="Shahi Paneer Gravy">Shahi Paneer Gravy</option>
+            <option value="BBQ Sauce On Base">BBQ Sauce On Base</option>
+            <option value="Hot Sauce On Base">Hot Sauce On Base</option>
+            <option value="Garlic Base Sauce">Garlic Base Sauce</option>
+          </select>
+          <span></span><br />
+
+          <label for="cheese">Cheese : </label><br />
+          <input type="radio" name="info" value="Regular" checked />
+          <label for="regular cheese">Regular</label>&nbsp;<br />
+          <input type="radio" name="info" value="Double Cheese" />
+          <label for="Double Cheese">Double Cheese</label>&nbsp;<br />
+          <input type="radio" name="info" value="Cheese Burst" />
+          <label for="cheese burst">Cheese Burst</label><br />
+
+          <label for="Toppings">Toppings :</label><br />
+
+          <input
+            type="checkbox"
+            id="Jalapeno Peppers"
+            name="toppings"
+            value="Jalapeno Peppers"
+          />
+          <label for="Jalapeno Peppers">Jalapeno Peppers</label> &nbsp;
+          <input
+            type="checkbox"
+            id="Black Olives"
+            name="toppings"
+            value="Black Olives"
+          />
+          <label for="Black Olives">Black Olives</label>&emsp;&emsp;<br />
+          <input
+            type="checkbox"
+            id="Green Olives"
+            name="toppings"
+            value="Green Olives"
+          />
+          <label for="Green Olives">Green Olives</label>&emsp;&emsp;&emsp;
+          <input
+            type="checkbox"
+            id="Tandoori Chicken"
+            name="toppings"
+            value="Tandoori Chicken"
+          />
+          <label for="Tandoori Chicken">Tandoori Chicken</label><br />
+
+          <input
+            type="checkbox"
+            id="Butter Chicken"
+            name="toppings"
+            value="Butter Chicken"
+          />
+          <label for="Butter Chicken">Butter Chicken</label>&nbsp;
+          <input
+            type="checkbox"
+            id="Shahi Paneer"
+            name="toppings"
+            value="Shahi Paneer"
+          />
+          <label for="Shahi Paneer">Shahi Paneer</label>&nbsp;&emsp;&emsp;<br />
+          <input
+            type="checkbox"
+            id="Tandoori Paneer"
+            name="toppings"
+            value="Tandoori Paneer"
+          />
+          <label for="Tandoori Paneer">Tandoori Paneer</label> &nbsp;
+          <input
+            type="checkbox"
+            id="Hot Peppers"
+            name="toppings"
+            value="Hot Peppers"
+          />
+          <label for="Hot Peppers">Hot Peppers</label><br />
+          <span class="no-topping-error"></span>
+          <div class="form-group">
+            <label for="message">Any Comments \ Remarks : </label><br />
+            <textarea name="message" id="message" rows="5" cols="70"></textarea>
+          </div>
+          <input
+            type="button"
+            value="Submit"
+            class="btn"
+            onclick="validateForm()"
+          />
+        </form>
+      </div>
+    </section>
+    <footer id="main-footer">
+      <p>ThunderFury &copy; 2021, All Rights Reseved</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </footer>
+    <nav id="navbar">
+      <div class="container">
+        <ul>
+          <li><a class="current" href="about.html">About</a></li>
+          <li><a href="index.html">Contact</a></li>
+          <li><a href="hiring.html">Hiring</a></li>
+          <li><a href="FAQ.html">FAQ's</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script src="/Pizza.js"></script>
+  </body>
+</html>

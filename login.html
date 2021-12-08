@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    
+    <title>Login Page</title>
+  </head>
+  <body>
+    <form
+      class="login"
+      id="form"
+      onsubmit="event.preventDefault()"
+      method="get"
+    >
+      <h1>Login or <a href="signUp.html">Signup</a></h1>
+      <label for="email">Email</label>
+      <input id="email" placeholder="eg.,test@xyz.com" type="text" required />
+      <label for="password">Password</label>
+      <input type="password" id="Password" placeholder="eg.,zzzxxx" />
+      <button type="submit" value="login" class="login" onclick="login()">
+        Login
+      </button>
+    </form>
+  
+  </body>
+  
+  
+  <script>
+    function login() {
+      const email = document.getElementById("email");
+      const password = document.getElementById("Password").value;
+
+      var emailFormat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+
+      if (email.value == "" || email.value == null) {
+        alert("email is required");
+      } else if (!email.value.match(emailFormat)) {
+        console.log("email: " + email);
+        console.log("email format: " + emailFormat);
+        alert("enter valid email id.");
+      } else if (password == "") {
+        alert("Please enter the password");
+      } else if (password.length >= 20 || password.length <= 6) {
+        alert("Incorrect Password");
+      } else {
+        alert("Thank you for login & you are redirecting to webpage");
+        window.location.href = "index.html";
+      }
+    }
+  </script>
+</html>

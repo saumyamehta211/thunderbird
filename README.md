@@ -1,8 +1,3 @@
-﻿# project-thunderbird
-Phase one
-Name : Ashley Rodrigues
-Student Number: n01491811
-Tasks
-    Fully functional web page with HTML, CSS and JavaScript
-Learning Curve and challengers
-    JavaScript validation for check boxes 
+## Assignment name: Project 4
+## Name : Saumya Mehta
+## Student Number: N01487261
