@@ -1,0 +1,210 @@
+body {
+  background-image: url(../images/andrew-seaman-sQopSb2K0CU-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+}
+
+/* Top Nav Styles */
+#navbar {
+  background: black;
+  overflow: auto;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 10px;
+}
+#navbar a {
+  color: white;
+  display: block;
+  margin: auto;
+  text-decoration: none;
+}
+
+#navbar .logo {
+  float: left;
+  padding-top: 10px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+  margin-top: 25px;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+/* Navbar buttons */
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: white;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+.clr {
+  clear: both;
+}
+.l-heading {
+  font-size: 40px;
+  line-height: 1.2;
+}
+/* Padding */
+.py-1 {
+  padding: 10px 0px;
+}
+.py-2 {
+  padding: 20px 0px;
+}
+.py-3 {
+  padding: 30px 0px;
+}
+
+#wrapper {
+  width: 60%;
+  color: #000000;
+  margin: 0 auto;
+  min-width: 900px;
+  max-width: 1524px;
+  padding: 0;
+  background-color: white;
+  border-radius: 15px 50px 30px 10px;
+  opacity: 0.8;
+}
+
+input {
+  background-color: transparent;
+  color: #000000;
+  font-family: "Lucida Sans", Verdana, sans-serif;
+  font-weight: bold;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid #c4c3c3 1px;
+  padding: 3px 10px;
+}
+
+.submit-button {
+  border-radius: 12px;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 400px;
+}
+
+.label-name {
+  margin-left: 200px;
+}
+
+.label-email {
+  margin-left: 200px;
+}
+
+.label-phone {
+  margin-left: 142px;
+}
+
+#main-footer {
+  text-align: center;
+  background: rgb(24, 24, 24);
+  color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  #wrapper {
+    width: 100%;
+  }
+  .bookTableHeading {
+    text-align: left;
+    padding-left: 40px;
+  }
+  .detailHeading {
+    text-align: left;
+    padding-left: 40px;
+  }
+  .label-name {
+    margin-left: 100px;
+  }
+  .label-email {
+    margin-left: 100px;
+  }
+  .label-phone {
+    margin-left: 42px;
+  }
+  #wrapper {
+    min-width: 400px;
+  }
+  .submit-button {
+    margin-left: 285px;
+  }
+}
+.fab {
+  color: black;
+}
