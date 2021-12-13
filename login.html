@@ -18,8 +18,10 @@
       <h1>Login or <a href="signUp.html">Signup</a></h1>
       <label for="email">Email</label>
       <input id="email" placeholder="eg.,test@xyz.com" type="text" required />
+      <span id="errorEmail"></span>
       <label for="password">Password</label>
       <input type="password" id="Password" placeholder="eg.,zzzxxx" />
+      <span id="errorPassword"></span>
       <button type="submit" value="login" class="login" onclick="login()">
         Login
       </button>
@@ -36,15 +38,17 @@
       var emailFormat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
 
       if (email.value == "" || email.value == null) {
-        alert("email is required");
+        errorEmail.innerText = 'email is required';
+        errorEmail.style.color = "#FF0000"
       } else if (!email.value.match(emailFormat)) {
-        console.log("email: " + email);
-        console.log("email format: " + emailFormat);
-        alert("enter valid email id.");
+        errorEmail.innerText = 'enter valid email id.';
+        errorEmail.style.color = "#FF0000"
       } else if (password == "") {
-        alert("Please enter the password");
+        errorPassword.innerText = 'Please enter the password';
+        errorPassword.style.color = "#FF0000"
       } else if (password.length >= 20 || password.length <= 6) {
-        alert("Incorrect Password");
+        errorPassword.innerText = "Incorrect Password"
+        errorPassword.style.color = "#FF0000"
       } else {
         alert("Thank you for login & you are redirecting to webpage");
         window.location.href = "index.html";

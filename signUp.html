@@ -21,8 +21,10 @@
         <h1>Signup or <a href="login.html"> Login</a></h1>
         <label class="firstName">First Name</label>
         <input type="text" placeholder="eg.,Nidhish" id="firstName" required />
+        <span id="errorFirstName"></span>
         <label for="lastName">Last Name</label>
         <input type="text" placeholder="eg.,Kansra" id="lastName" required />
+        <span id="errorLastName"></span>
         <label for="email">E-mail</label>
         <input
           type="email"
@@ -30,6 +32,7 @@
           id="email"
           required
         />
+        <span id="errorEmail"></span>
         <label for="password">Password</label>
         <input
           type="password"
@@ -37,8 +40,10 @@
           placeholder="eg.,Qwerty@1"
           required
         />
+        <span id="errorPassword"></span>
         <label for="Mobile">Mobile</label>
         <input type="tel" placeholder="eg.,1234567890" id="mobile" required />
+        <span id="errorPhone"></span>
         <button
           type="submit"
           class="submit-btn"
@@ -69,23 +74,30 @@
       let phoneFormat = /^\d{10}$/;
 
       if (firstName.value == "" || firstName.value == null) {
-        alert("firstName is required");
+        errorFirstName.innerText = 'firstName is required';
+        errorFirstName.style.color = "#FF0000"
       } else if (lastName.value == "" || lastName.value == null) {
-        alert("lastName is required");
+        errorLastName.innerText = 'lastName is required'
+        errorLastName.style.color = "#FF0000"
       } else if (email.value == "" || email.value == null) {
-        alert("email is required");
+        errorEmail.innerText = 'email is required'
+        errorEmail.style.color = "#FF0000"
       } else if (!email.value.match(emailFormat)) {
         console.log("email: " + email);
         console.log("email format: " + emailFormat);
-        alert("enter valid email id.");
+        errorEmail.innerText = 'enter valid email id.'
+        errorEmail.style.color = "#FF0000"
       } else if ((password == "") | (password.value.length <= 6)) {
-        alert("Password must be longer than 6 character");
+        errorPassword.innerText = 'Password must be longer than 6 character'
+        errorPassword.style.color = "#FF0000"
       } else if (password.value.length >= 20) {
-        alert("Password must be less than 20 character");
+        errorPassword.innerText = 'Password must be less than 20 character'
+        errorPassword.style.color = "#FF0000"
       } else if (!mobile.value.match(phoneFormat)) {
         console.log("mobile: " + mobile);
         console.log("mobile format: " + phoneFormat);
-        alert("Enter a valid number");
+        errorPhone.innerText = 'Enter a valid number'
+        errorPhone.style.color = "#FF0000"
       } else {
         alert("Your account has been created");
         window.location.href = "login.html";
