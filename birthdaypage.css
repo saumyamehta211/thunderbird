@@ -10,6 +10,7 @@ body {
   min-width: 750px;
   max-width: 1024px;
 }
+
 #navbar {
   background: black;
   overflow: auto;
@@ -107,6 +108,9 @@ h2 {
   font-style: italic;
   font-size: 35px;
 }
+.required {
+  color: red;
+}
 p {
   padding-left: 22px;
   font-size: 20px;
@@ -119,17 +123,30 @@ legend {
   padding-left: 200px;
   font-size: 20px;
 }
+#errorFirstName {
+  padding-left: 295px;
+}
 .last_name {
   padding-left: 203px;
   font-size: 20px;
+}
+#errorLastName {
+  padding-left: 295px;
 }
 .Email {
   padding-left: 229px;
   font-size: 20px;
 }
+#errorEmail {
+  padding-left: 295px;
+  
+}
 .number {
   padding-left: 164px;
   font-size: 20px;
+}
+#errorPhone {
+  padding-left: 295px;
 }
 .birthday_date {
   padding-left: 223px;
@@ -151,6 +168,9 @@ legend {
   margin-left: 43%;
   margin-top: 10px;
   font-size: 20px;
+}
+p {
+  padding-left: 215px;
 }
 input[type="radio"] {
   height: 15px;
