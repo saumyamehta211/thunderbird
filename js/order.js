@@ -1,5 +1,4 @@
-// let orderInfo = {
-//     "products":[
+// let orderInfo = [
 //         {
 //             "name":"2015 Merlot",
 //             "image":"images/image-wine_tasting.jpg",
@@ -21,21 +20,19 @@
 //             "price":15.25,
 //             "description":"Try our classic toasted pizza with Sliced mushrooms, green pepper, red onion, tomato and pizza mozzarella."
 //         }
-//     ],
-//     "taxrate":20
-// }
+//     ];
 
-// localStorage.setItem('orderInfo', JSON.stringify(orderInfo));
+// localStorage.setItem('productsArr', JSON.stringify(orderInfo));
 
 
 $(document).ready(function() {
     let infoFromStorage = {"products":JSON.parse(localStorage.getItem('productsArr')),"taxrate":20};
-    infoFromStorage.products.forEach(loadProducts);
-    setDetails(infoFromStorage);
-    // $.getJSON('./JSON/orders.json', function(jd) {
-    //     jd.products.forEach(loadProducts);
-    //     setDetails(jd);
-    // });
+    if (infoFromStorage.products != null){
+        infoFromStorage.products.forEach(loadProducts);
+        setDetails(infoFromStorage);
+    }else{
+        setNullDetails();
+    }
 });
 
 function loadProducts(item, index, arr){
@@ -61,6 +58,31 @@ function setDetails(jsonData){
     jsonData.products.forEach(function(item, index, arr){
         subTotal+=(item.quantity*item.price);
     });
+    let tax = subTotal * (taxRate/100);
+    Total = subTotal+tax;
+    $("#subtotal-price").html("$"+subTotal.toFixed(2));
+    $("#taxes-price").html("$"+tax.toFixed(2));
+    $("#total-price").html("$"+Total.toFixed(2));
+}
+
+function setNullDetails(){
+    let gridItem = "";
+     gridItem = "<div class='grid-container product'>";
+     gridItem += "<div class='item1 product-image-container'>";
+     gridItem += "";
+     gridItem += "</div>";
+     gridItem += "<div class='item2 product-heading'>No Items Found</div>";
+     gridItem += "<div class='item3 product-quantity'></div>";
+     gridItem += "<div class='item4 product-price'></div>";
+     gridItem += "<div class='item5 product-description'></div>";
+     gridItem += "</div>";
+
+
+    $(gridItem).appendTo( "#products-container" );
+    let subTotal =  0;
+    let taxRate =  0;
+    let Total =  0;
+
     let tax = subTotal * (taxRate/100);
     Total = subTotal+tax;
     $("#subtotal-price").html("$"+subTotal.toFixed(2));

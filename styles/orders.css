@@ -10,6 +10,7 @@ body {
 /* Main product section styles */
 main {
     margin-bottom: 15%;
+    min-height: 500px;
 }
 
 main h1 {
@@ -70,9 +71,9 @@ main h1 {
     max-width: 200px;
 }
 
-#main-footer {
+/* #main-footer {
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
-}
+} */
