@@ -74,6 +74,9 @@
     padding: 20px;
 }
 
+.social a {
+    color: black;
+}
 
 
 @media screen and (max-width: 530px) {
