@@ -55,37 +55,104 @@
       let password = document.getElementById("password");
       let mobile = document.getElementById("mobile");
       let emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-      let phoneFormat = /^\d{10}$/;
+      let boolValuefirstName = false;
+      let boolValuelastName = false;
+      let boolValueemail = false;
+      let boolValuepassword = false;
+      let boolValuenumber = false;
+      
 
-      if (firstName.value == "" || firstName.value == null) {
+      if (firstName.value == "") {
+        console.log("inside first if")
         errorFirstName.innerText = 'firstName is required';
-        errorFirstName.style.color = "#FF0000"
-      } else if (lastName.value == "" || lastName.value == null) {
+        errorFirstName.style.color = "#FF0000";
+        boolValuefirstName = false;
+        
+      }
+      else if(!firstName.value == "" ) {
+        errorFirstName.innerText = 'VALID';
+        errorFirstName.style.color = "#008000";
+        boolValuefirstName = true;
+     
+
+      }
+      if (lastName.value == "" ) {
         errorLastName.innerText = 'lastName is required'
         errorLastName.style.color = "#FF0000"
-      } else if (email.value == "" || email.value == null) {
+        boolValuelastName = false;
+        
+      }
+      else if(!lastName.value == "" ) {
+        errorLastName.innerText = 'VALID';
+        errorLastName.style.color = "#008000";
+        boolValuelastName = true;
+       
+      }
+      if(email.value == "" ) {
         errorEmail.innerText = 'email is required'
         errorEmail.style.color = "#FF0000"
-      } else if (!email.value.match(emailFormat)) {
+        boolValueemail = false;
+      
+      }
+      else if(!email.value == "") {
+        errorEmail.innerText = 'VALID'
+        errorEmail.style.color = "#008000";
+        boolValueemail = true;
+        
+      }
+      else if(!email.value.match(emailFormat)) {
         console.log("email: " + email);
         console.log("email format: " + emailFormat);
         errorEmail.innerText = 'enter valid email id.'
         errorEmail.style.color = "#FF0000"
-      } else if ((password == "") | (password.value.length <= 6)) {
+        boolValueemail = false;
+        
+      } 
+      else if(email.value.match(emailFormat)) {
+        console.log("email: " + email);
+        console.log("email format: " + emailFormat);
+        errorEmail.innerText = 'VALID'
+        errorEmail.style.color = "#008000";
+        boolValueemail = true;
+        
+      }
+
+      if((password.value == "") | (password.value.length <= 6 | password.value.length >= 20)) {
         errorPassword.innerText = 'Password must be longer than 6 character'
         errorPassword.style.color = "#FF0000"
-      } else if (password.value.length >= 20) {
-        errorPassword.innerText = 'Password must be less than 20 character'
-        errorPassword.style.color = "#FF0000"
-      } else if (!mobile.value.match(phoneFormat)) {
+        boolValuepassword = false;
+        
+      }
+      else if((!password.value == "") | (!password.value.length <= 6 | !password.value.length >= 20)) {
+        errorPassword.innerText = 'VALID';
+        errorPassword.style.color = "#008000";
+        boolValuepassword = true;
+       
+      }
+      if(mobile.value == "" || mobile.value.length != 10)  {
         console.log("mobile: " + mobile);
-        console.log("mobile format: " + phoneFormat);
         errorPhone.innerText = 'Enter a valid number'
         errorPhone.style.color = "#FF0000"
-      } else {
+        boolValuenumber = false;
+       
+      }
+      else if(!mobile.value == "" ||  !mobile.value.length == 10)  {
+        console.log("mobile: " + mobile);
+        console.log("mobile value:" + mobile.value) 
+        errorPhone.innerText = 'VALID';
+        errorPhone.style.color = "#008000";
+        boolValuenumber = true;
+      }
+      if (boolValuefirstName == true &&
+       boolValuelastName == true && 
+       boolValueemail == true && 
+       boolValuepassword == true &&
+        boolValuenumber == true) {
+        console.log("")
         alert("Your account has been created");
         window.location.href = "login.html";
       }
     }
+  
   </script>
 </html>

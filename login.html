@@ -33,23 +33,46 @@
   <script>
     function login() {
       const email = document.getElementById("email");
-      const password = document.getElementById("Password").value;
-
+      const password = document.getElementById("Password");
       var emailFormat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+      let boolValueemail = false;
+      let boolValuepassword = false;
 
       if (email.value == "" || email.value == null) {
         errorEmail.innerText = 'email is required';
         errorEmail.style.color = "#FF0000"
-      } else if (!email.value.match(emailFormat)) {
+      }
+      else if(!email.value == "") {
+        errorEmail.innerText = 'VALID'
+        errorEmail.style.color = "#008000";
+        boolValueemail = true;
+        
+      }
+      else if(!email.value.match(emailFormat)) {
         errorEmail.innerText = 'enter valid email id.';
         errorEmail.style.color = "#FF0000"
-      } else if (password == "") {
-        errorPassword.innerText = 'Please enter the password';
+      } 
+      else if(email.value.match(emailFormat)) {
+        console.log("email: " + email);
+        console.log("email format: " + emailFormat);
+        errorEmail.innerText = 'VALID'
+        errorEmail.style.color = "#008000";
+        boolValueemail = true;
+      
+      }
+      if((password.value == "") | (password.value.length <= 6 | password.value.length >= 20)) {
+        errorPassword.innerText = 'Password must be longer than 6 character'
         errorPassword.style.color = "#FF0000"
-      } else if (password.length >= 20 || password.length <= 6) {
-        errorPassword.innerText = "Incorrect Password"
-        errorPassword.style.color = "#FF0000"
-      } else {
+        boolValuepassword = false;
+
+      }
+      else if((!password.value == "") | (!password.value.length <= 6 | !password.value.length >= 20)) {
+        errorPassword.innerText = 'VALID';
+        errorPassword.style.color = "#008000";
+        boolValuepassword = true;
+      
+      } 
+      if ( boolValueemail == true && boolValuepassword == true) {
         alert("Thank you for login & you are redirecting to webpage");
         window.location.href = "index.html";
       }
