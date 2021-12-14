@@ -38,4 +38,4 @@
 
 - Pages: Pizza.html: Pizza delivery page where a customer can customise his/her pizza and place an order.
 
-
+- Pages; FAQ.html: Faq regarding the restaurant.
