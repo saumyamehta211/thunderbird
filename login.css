@@ -1,7 +1,7 @@
 body {
   background-image: url("images/backgrndimage.jpg");
   background-blend-mode: screen;
-  background-color: rgb(99, 98, 98);
+  background-color: rgb(15, 15, 15);
   display: flex;
   align-items: center;
   flex-direction: column;
