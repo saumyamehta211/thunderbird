@@ -122,8 +122,6 @@ h4 {
     width: 60%;
     color: #000000;
     margin: 50px auto 0;
-    min-width: 900px;
-    max-width: 1524px;
     padding: 0;
     background-color: white;
     border-radius: 15px 50px 30px 10px;
@@ -141,3 +139,27 @@ h4 {
     padding: 20px;
     margin-top: 40px;
   }
+
+  .fab {
+    color: black;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #wrapper {
+      width: 100%;
+    }
+
+    .navbar {
+      width: 360px;
+    }
+
+    .formSuccessImg {
+      margin-left: 10px;
+      width: 350px;
+    }
+
+    #main-footer {
+      margin-bottom: 10px;
+    }
+  }
+  

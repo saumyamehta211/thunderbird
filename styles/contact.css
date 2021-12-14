@@ -177,6 +177,10 @@ input {
   margin-top: 40px;
 }
 
+.fab {
+  color: black;
+}
+
 @media only screen and (max-width: 768px) {
   #wrapper {
     width: 100%;
@@ -190,21 +194,21 @@ input {
     padding-left: 40px;
   }
   .label-name {
-    margin-left: 100px;
+    margin-left: 10px;
   }
   .label-email {
-    margin-left: 100px;
+    margin-left: 10px;
   }
   .label-phone {
-    margin-left: 42px;
+    margin-left: 10px;
   }
   #wrapper {
     min-width: 400px;
   }
   .submit-button {
-    margin-left: 285px;
+    margin-left: 150px;
   }
-}
-.fab {
-  color: black;
+  #main-footer {
+    margin-bottom: 10px;
+  }
 }
