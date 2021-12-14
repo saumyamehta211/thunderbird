@@ -360,6 +360,14 @@ p.general {
 	width: 11em;
 }
 
+input[name=submit] {
+	cursor: pointer;
+}
+
+.error {
+	color:red
+}
+
 
 @media (min-width: 768px) {
 	.vertical-decoration {
