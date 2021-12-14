@@ -22,7 +22,7 @@
 
 - Pages: contact.html/contactSuccess.html: Contact Page which is used by the customers to contact the restaurant; contact success page, where a user is redirected after successfully submitting the contact form.
 
--Pages: menu.html: Menu Page showcasing the entire menu, and the dishes being offered by the restaurant.
+- Pages: menu.html: Menu Page showcasing the entire menu, and the dishes being offered by the restaurant.
 
 ## Name : Nidhish Kansra
 
