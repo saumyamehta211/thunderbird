@@ -198,3 +198,128 @@ p1 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+@media only screen and (max-width: 700px)  {
+  #navbar {
+    max-width: 100%;
+  }
+  #navbar .logo {
+    float: none;
+    text-align: center;
+    padding-left: 180px;
+    padding-bottom: 10px;
+    font: 500;
+
+  }
+  
+  #navbar ul,
+  #navbar ul li {
+    float: none;
+  }
+  
+  #navbar ul li a {
+    padding: 5px;
+    border-bottom: #444 dotted 1px;
+  }
+  
+  #showcase {
+    height: 100%;
+  }
+  
+  #showcase .showcase-content {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  h1 {
+    padding-left: 100px;
+  }
+  h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 30px;
+    max-width: 400px;
+  }
+  .required {
+    color: red;
+  }
+  p {
+    padding-left: 22px;
+    font-size: 20px;
+  }
+  .field-padding {
+    max-width: 350px;
+
+  }
+  legend {
+    text-align: center;
+    font-size: 21px;
+  }
+  .first_name {
+    padding-left: 50px;
+    font-size: 20px;
+  }
+  #errorFirstName {
+    padding-left: 150px;
+  }
+  .last_name {
+    padding-left: 53px;
+    font-size: 20px;
+  }
+  #errorLastName {
+    padding-left: 150px;
+  }
+  .Email {
+    padding-left: 80px;
+    font-size: 20px;
+  }
+  #errorEmail {
+    padding-left: 150px;
+    
+  }
+  .number {
+    padding-left: 15px;
+    font-size: 20px;
+  }
+  #errorPhone {
+    padding-left: 150px;
+  }
+  fieldset {
+    width: 450px;
+  }
+  .birthday_date {
+    padding-left: 50px;
+    font-size: 20px;
+  }
+  .arrival_time {
+    padding-left: 60px;
+    font-size: 20px;
+  }
+  .Departure_time {
+    padding-left: 37px;
+    font-size: 20px;
+  }
+  .total_guest {
+    padding-left: 2px;
+    font-size: 15px;
+    width: 90px;
+  }
+
+  .party_type {
+    margin-left: 43%;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  p {
+    padding-left: 50px;
+  }
+  .submitbutton {
+    margin-left: 90px;
+  }
+  #main-footer {
+   width: 100%;
+  }
+  .social {
+    padding-left: 40px;
+  }
+}
