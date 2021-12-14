@@ -20,8 +20,8 @@ main h1 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 50px 100px;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2% 5%;
 }
 
 .item1 {
@@ -49,6 +49,7 @@ main h1 {
     padding: 2%;
     margin-right: 1%;
 }
+
 #subtotal-price,#taxes-price,#total-price {
     float: right;
     font-weight: bold;
@@ -67,8 +68,45 @@ main h1 {
     font-size: large;
 }
 
-.product .product-image-container img{
+.product .product-image-container img {
     max-width: 200px;
+}
+
+#order-button-container {
+    padding: 20% 3% 3%;
+}
+
+.order-button {
+    width: 100%;
+    cursor: pointer;
+    background-color: #3A3D3E;
+    border: 2px solid black;
+    color: white;
+    padding: 7% 10%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    box-shadow: rgb(0 0 0 / 50%) 1.95px 1.95px 2.6px;
+}
+
+/* Media query starts */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: x-small;
+    }
+
+    .order-button {
+        font-size: medium;
+    }
+
+    .product .product-heading {
+        font-size: medium;
+    }
+
+    .product .product-image-container{
+        display: none;
+    }
 }
 
 /* #main-footer {

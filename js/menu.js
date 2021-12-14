@@ -150,9 +150,7 @@ function addProduct(addValue) {
             products.push(addValue)
         }
         // Storing products array in local storage.
-        // new_products = {"products": products, "taxes" : 20}
         localStorage.setItem('productsArr', JSON.stringify(products));
-        // localStorage.setItem("productsArr", products);
     }
 }
 
