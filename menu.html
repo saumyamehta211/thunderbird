@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <title>Thunder's Fury</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="styles/mobile.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="styles/common_bts.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <nav id="navbar">
+            <div class="container">
+              <h1 class="logo"><a href="index.html">ThunderFury</a></h1>
+              <ul>
+                <li class="dropdown-new">
+                  <a class="current" href="menu.html">Menu</a>
+                  <div id="myDropdown" class="dropdown-new-content">
+                    <a href="mughlai_cuisine_abhishek.html">Mughlai</a>
+                    <a href="Mexican.html">Mexican</a>
+                    <a href="chinese.html">Chinese</a>
+                  </div>
+                </li>
+                <li class="dropdown1-new">
+                  <a href="events.html">Event & Booking</a>
+                  <div id="myDropdown1" class="dropdown-new-content">
+                    <a href="wedding_booking.html">Wedding</a>
+                    <a href="birthdaypage.html">Birthday</a>
+                  </div>
+                </li>
+                <li><a href="Pizza.html">Pizza Delivery</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                  <a href="order_page.html"
+                    ><i class="fas fa-shopping-cart fa-1.5x"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+
+    <!-- Menu Heading -->
+    <div class="menu-heading">
+        <h1 class="h1-menu">Menu</h1>
+        <h3 class="h3-menu">The mouth-watering food that made us an award winning restaurant.</h3>
+    </div>
+    
+<!-- Menu Sections (Cuisines)-->
+    <nav class="mid-nav">
+        <a class="active all-tab" href="#">All</a>
+        <a class="mughlai-tab" href="#">Mughlai</a>
+        <a class="mexican-tab" href="#">Mexican</a>
+        <a class="chinese-tab" href="#">Chinese</a>
+    </nav>
+
+    <!-- Menu Contents -->
+    <section class="menu">
+        <div class="container">
+            <div class="row mughlai-cuisine">
+                <h1 class="cuisine-heading">Mughlai Food</h1>
+              <div class="col-sm-4">
+                <img class="dish-img" src="images/pexels-chan-walrus-958545.jpg" width="100%"; height="300"; alt="First image">
+                <div class="food-detail-box">
+                    <h3 class="food-heading">Chicken Thali</h3>
+                    <p class="food-para">A spicy, tangy homestyle chicken curry made with a mix of different Indian spices and 
+                        smothered the goodness of masala gravy</p>
+                    <span class="price">$ 17.99</span>
+                    <div class="quantityContainer">
+                        <button class="minusButton">-</button>
+                        <input type="text" class="quantity" value=0>
+                        <button class="plusButton">+</button>
+                    </div>
+                    <button class="add-to-cart chickenThali" id="add-to-cart-ct">Add to cart</button>
+                </div>
+              </div>
+
+             <div class="col-sm-4">
+                <img class="dish-img" src="images/pexels-marvin-ozz-2474661.jpg" width="100%"; height="300"; alt="First image">
+                <div class="food-detail-box">
+                    <h3 class="food-heading">Butter Chicken</h3>
+                    <p class="food-para">Butter chicken is a curry of chicken in a spiced tomato and butter. Aromatic golden chicken in an incredible creamy sauce.
+                    </p>
+                    <span class="price">$ 17.99</span>
+                    <div class="quantityContainer">
+                        <button class="minusButton">-</button>
+                        <input type="text" class="quantity" value=0>
+                        <button class="plusButton">+</button>
+                    </div>
+                    <button class="add-to-cart butterChicken" id="add-to-cart-btc">Add to cart</button>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <img class="dish-img" src="images/pexels-omar-mahmood-106343.jpg" width="100%"; height="300"; alt="First image">
+                <div class="food-detail-box">
+                    <h3 class="food-heading">Chicken Tikka</h3>
+                    <p class="food-para">Small pieces of boneless chicken baked using skewers on a brazier called 
+                        angeethi or over charcoal after marinating in Indian spices</p>
+                    <span class="price">$ 17.99</span>
+                    <div class="quantityContainer">
+                        <button class="minusButton">-</button>
+                        <input type="text" class="quantity" value=0>
+                        <button class="plusButton">+</button>
+                    </div>
+                    <button class="add-to-cart chickenTikka" id="add-to-cart-ctk">Add to cart</button>
+                </div>
+                <br>
+                <br>
+            </div>
+            </div>
+
+            <div class="row mexican-cuisine">
+                <h1 class="cuisine-heading">Mexican Food</h1>
+                <div class="col-sm-4">
+                    <img class="dish-img" src="images/Beef Birria Tacos.jpg" width="100%"; height="300"; alt="First image">
+                    <div class="food-detail-box">
+                        <h3 class="food-heading">Beef Birria Tacos</h3>
+                        <p class="food-para">These juicy tacos are loaded with brothy red sauce and tender shredded meat with veggies. You won't regret ordering this!</p>
+                        <span class="price">$ 15.99</span>
+                        <div class="quantityContainer">
+                            <button class="minusButton">-</button>
+                            <input type="text" class="quantity" value=0>
+                            <button class="plusButton">+</button>
+                        </div>
+                        <button class="add-to-cart beefTaco" id="add-to-cart-bft">Add to cart</button>
+                    </div>
+                    </div>
+
+                <div class="col-sm-4">
+                    <img class="dish-img" src="images/Bacon Chilaquiles with Eggs.jpg" width="100%"; height="300"; alt="First image">
+                    <div class="food-detail-box">
+                        <h3 class="food-heading">Bacon Chilaquiles with Eggs</h3>
+                        <p class="food-para">Famous in Mexico and throughout the Southwest. It gives the traditional eggs-and-bacon a unique twist. This is a must try!
+                        <span class="price">$ 15.99</span>
+                        <div class="quantityContainer">
+                            <button class="minusButton">-</button>
+                            <input type="text" class="quantity" value=0>
+                            <button class="plusButton">+</button>
+                        </div>
+                        <button class="add-to-cart baconChilaEgg" id="add-to-cart-bce">Add to cart</button>
+                    </div>
+                    </div>
+
+                <div class="col-sm-4">
+                    <img class="dish-img" src="images/Pork Posole.jpg" width="100%"; height="300"; alt="First image">
+                    <div class="food-detail-box">
+                        <h3 class="food-heading">Pork Posole</h3>
+                        <p class="food-para">A Mexican classic full of cubed pork, sliced sausage, hominy. The stew is seasoned with a combination of spices topped with garnishes.
+                        <span class="price">$ 15.99</span>
+                        <div class="quantityContainer">
+                            <button class="minusButton">-</button>
+                            <input type="text" class="quantity" value=0>
+                            <button class="plusButton">+</button>
+                        </div>
+                        <button class="add-to-cart porkPosole" id="add-to-cart-pkp">Add to cart</button>
+                    </div>
+                    </div>
+            </div>
+        
+            <div class="row chinese-cuisine">
+            <h1 class="cuisine-heading">Chinese Food</h1>
+            <div class="col-sm-4">
+                <img class="dish-img" src="images/Dumpling.jpg" width="100%"; height="300"; alt="First image">
+                <div class="food-detail-box">
+                    <h3 class="food-heading">Dumpling (饺子)</h3>
+                    <p class="food-para">Dumpling has been an indispensable Chinese dish of the reunion dinner on Chinese New Year’s Eve. They are everyone's favourite chinese snack!
+                    <span class="price">$ 12.99</span>
+                    <div class="quantityContainer">
+                        <button class="minusButton">-</button>
+                        <input type="text" class="quantity" value=0>
+                        <button class="plusButton">+</button>
+                    </div>
+                    <button class="add-to-cart dumpling" id="add-to-cart-dmg">Add to cart</button>
+                </div>
+                </div>
+
+            <div class="col-sm-4">
+                <img class="dish-img" src="images/kung pao chicken.jpg" width="100%"; height="300"; alt="First image">
+                <div class="food-detail-box">
+                    <h3 class="food-heading">Kung Pao Chicken（宫保鸡丁）</h3>
+                    <p class="food-para">Kung Pao Chicken（宫保鸡丁）is a popular dish not only among Chinese people. 
+                        Special flavor of sweet and sour and is a little bit spicy.
+                    <span class="price">$ 16.99</span>
+                    <div class="quantityContainer">
+                        <button class="minusButton">-</button>
+                        <input type="text" class="quantity" value=0>
+                        <button class="plusButton">+</button>
+                    </div>
+                    <button class="add-to-cart kungPaoChicken" id="add-to-cart-kpc">Add to cart</button>
+                </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <img class="dish-img" src="images/chowmein.jpg" width="100%"; height="300"; alt="First image">
+                    <div class="food-detail-box">
+                        <h3 class="food-heading">Chow Mein（炒面）</h3>
+                        <p class="food-para">Chow Mein（炒面）or stir-fried noodles, is one of the best Chinese dishes, made of noodles, onion, sliced meat, green pepper.
+                        <span class="price">$ 14.99</span>
+                        <div class="quantityContainer">
+                            <button class="minusButton">-</button>
+                            <input type="text" class="quantity" value=0>
+                            <button class="plusButton">+</button>
+                        </div>
+                        <button class="add-to-cart chowmein" id="add-to-cart-chm">Add to cart</button>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <p>ThunderFury &copy; 2021, All Rights Reseved</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </footer>
+        <nav id="navbar">
+          <div class="container">
+            <ul>
+              <li><a class="current" href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="hiring.html">Hiring</a></li>
+              <li><a href="FAQ.html">FAQ's</a></li>
+            </ul>
+          </div>
+        </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/header_bts.js"></script>
+</body>
+</html>

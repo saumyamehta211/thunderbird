@@ -15,8 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
@@ -25,7 +26,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/common_bts.css" />
 </head>
 <body>
     <div id="wrapper">
@@ -33,17 +34,17 @@
         <div class="container">
           <h1 class="logo"><a href="index.html">ThunderFury</a></h1>
           <ul>
-            <li class="dropdown">
+            <li class="dropdown-new">
               <a class="current" href="menu.html">Menu</a>
-              <div id="myDropdown" class="dropdown-content">
+              <div id="myDropdown" class="dropdown-new-content">
                 <a href="mughlai_cuisine_abhishek.html">Mughlai</a>
                 <a href="Mexican.html">Mexican</a>
                 <a href="chinese.html">Chinese</a>
               </div>
             </li>
-            <li class="dropdown1">
+            <li class="dropdown1-new">
               <a href="events.html">Event & Booking</a>
-              <div id="myDropdown1" class="dropdown-content">
+              <div id="myDropdown1" class="dropdown-new-content">
                 <a href="wedding_booking.html">Wedding</a>
                 <a href="birthdaypage.html">Birthday</a>
               </div>
@@ -94,15 +95,14 @@
                 <h3>Chicken Tikka Platter</h3>
               </div>
             </div>
-        
           </div>
       
           <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" role="button">
+            <a class="carousel-control left" data-slide="next" data-target="#carousel">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="right carousel-control" href="#myCarousel" role="button">
+            <a class="carousel-control right" data-slide="next" data-target="#carousel">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
@@ -150,11 +150,9 @@
               </div>
             </div>
           </div>
-
-          <script src="scripts/cuisine.js">
-            </script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="js/header.js"></script>
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="js/header_bts.js"></script>
+    <script src="scripts/cuisine.js"></script>
 </body>
 
 <footer id="main-footer">

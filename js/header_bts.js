@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $(".dropdown-new").mouseover(function(){
+        $("#myDropdown").css("display","block");
+    });
+    $(".dropdown-new").mouseleave(function(){
+        $("#myDropdown").css("display","none");
+    });
+    $(".dropdown1-new").mouseover(function(){
+        $("#myDropdown1").css("display","block");
+    });
+    $(".dropdown1-new").mouseleave(function(){
+        $("#myDropdown1").css("display","none");
+    });
+});
