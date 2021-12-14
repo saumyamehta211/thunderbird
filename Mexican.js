@@ -1,7 +1,7 @@
 let leftImages = [
-    "Images/Beef Birria Tacos.jpg",
-    "Images/Bacon Chilaquiles with Eggs.jpg",
-    "Images/Pork Posole.jpg"
+    "images/Beef Birria Tacos.jpg",
+    "images/Bacon Chilaquiles with Eggs.jpg",
+    "images/Pork Posole.jpg"
 ]
 
 let leftText = [{
