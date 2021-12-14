@@ -1,38 +1,48 @@
-// let orderInfo = [
-//         {
-//             "name":"2015 Merlot",
-//             "image":"images/image-wine_tasting.jpg",
-//             "quantity":1,
-//             "price":20.00,
-//             "description":"This year’s Merlot is medium/dark garnet in colour, with aromas of black cherry, blackberry, caramel, chocolate and vanilla.  The palate shows plum complemented with a blend of savoury dark berries and mocha/chocolate. It’s medium-bodied with velvety/dusty tannins, good acidity with well-integrated oak and medium finish."
-//         },
-//         {
-//             "name":"Classic Veggie Pizza",
-//             "image":"images/pizza.jpg",
-//             "quantity":1,
-//             "price":15.25,
-//             "description":"Try our classic toasted pizza with Sliced mushrooms, green pepper, red onion, tomato and pizza mozzarella."
-//         },
-//         {
-//             "name":"Toasted Veggie Pizza",
-//             "image":"images/pizza.jpg",
-//             "quantity":3,
-//             "price":15.25,
-//             "description":"Try our classic toasted pizza with Sliced mushrooms, green pepper, red onion, tomato and pizza mozzarella."
-//         }
-//     ];
+let orderInfo = [
+        {
+            "name":"2015 Merlot",
+            "image":"images/image-wine_tasting.jpg",
+            "quantity":1,
+            "price":20.00,
+            "description":"This year’s Merlot is medium/dark garnet in colour, with aromas of black cherry, blackberry, caramel, chocolate and vanilla.  The palate shows plum complemented with a blend of savoury dark berries and mocha/chocolate. It’s medium-bodied with velvety/dusty tannins, good acidity with well-integrated oak and medium finish."
+        },
+        {
+            "name":"Classic Veggie Pizza",
+            "image":"images/pizza.jpg",
+            "quantity":1,
+            "price":15.25,
+            "description":"Try our classic toasted pizza with Sliced mushrooms, green pepper, red onion, tomato and pizza mozzarella."
+        },
+        {
+            "name":"Toasted Veggie Pizza",
+            "image":"images/pizza.jpg",
+            "quantity":3,
+            "price":15.25,
+            "description":"Try our classic toasted pizza with Sliced mushrooms, green pepper, red onion, tomato and pizza mozzarella."
+        }
+    ];
 
-// localStorage.setItem('productsArr', JSON.stringify(orderInfo));
+localStorage.setItem('productsArr', JSON.stringify(orderInfo));
 
 
 $(document).ready(function() {
     let infoFromStorage = {"products":JSON.parse(localStorage.getItem('productsArr')),"taxrate":20};
     if (infoFromStorage.products != null){
+        $("#order-button-container").show();
         infoFromStorage.products.forEach(loadProducts);
         setDetails(infoFromStorage);
     }else{
+        $("#order-button-container").hide();
         setNullDetails();
     }
+    $(".order-button").click(function(){
+        Swal.fire({
+            title: 'Order Placed!',
+            text: 'Order placed successfully!',
+            icon: 'success',
+            confirmButtonText: 'Okay'
+        })
+    });    
 });
 
 function loadProducts(item, index, arr){
